@@ -42,6 +42,15 @@
 
 
 ### 추가 구현?
-bg -> animation -> video(youtube)
+bg -> animation -> video(youtube)<br/>
+각 테마별 소리를 나눠 조절할 수 있게?
 
 
+
+<br/>
+
+----- 
+
+Referece)<br/>
+https://rainymood.com/<br/>
+https://www.ambient-mixer.com/<br/>
