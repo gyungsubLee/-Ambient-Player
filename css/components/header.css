@@ -1,0 +1,44 @@
+header {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    height: 100vh;
+}
+
+header:hover>.linkBox {
+    transform: translateX(15%);
+}
+
+header:hover>.linkBox:hover {
+    transform: scale(1.1);
+}
+
+.linkBox {
+    width: 50px;
+    height: 50px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    margin: 15px 0;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-150%);
+    transition: 0.3s;
+}
+
+.iIcon-img {
+    opacity: var(--item-opacity);
+    width: 80px;
+    height: 80px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.iIcon-img:hover {
+    opacity: var(--hover-item-opacity);
+}
