@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,10 +16,16 @@
 
 <body>
     <div class="media-container">
+
+        <div class="audio-container">
+            <audio src="./audio/0.mp3" id="sound" type="audio/mp3"></audio>
+        </div>
+
         <div class="title-container">
             <h1 id="theme-item_text" class="title">Rainy mode</h1>
             <span class="sub-title">Rain Sounds for Sleep & Study</span>
         </div>
+
         <header>
             <div class="linkBox">
                 <img src="./image/i-icon.png" alt="i" class="iIcon-img">
@@ -29,15 +36,15 @@
                 </a>
             </div>
             <div class="linkBox">
-
                 <a href="" class="link">
                     <!-- imgae -->
                 </a>
             </div>
         </header>
+
         <main>
             <div class="audio-play-container">
-                <button id="pButton" class="play-button"></button>
+                <button id="pButton" class="play"></button>
                 <input type="range" min="0" max="1" step="0.01" value="1" class="slider">
             </div>
         </main>
@@ -51,11 +58,14 @@
                     <img src="./image/blizard(200x100).png" alt="blizard" class="theme-item__img">
                 </div>
                 <div class="theme-item">
-                    <img src="./image/train(원본).jpg" alt="train" class="theme-item__img">
+                    <img src="./image/train.jpg" alt="train" class="theme-item__img">
                 </div>
             </div>
         </footer>
+
     </div>
+    <script src="./js/playButton.js"></script>
+    <script src="./js/temaItems.js"></script>
 </body>
 
 </html>

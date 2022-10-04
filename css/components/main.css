@@ -10,7 +10,7 @@ main {
 .audio-play-container {
     display: flex;
     flex-direction: column;
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
 
 #pButton {
@@ -24,16 +24,43 @@ main {
     margin-bottom: 20px;
 }
 
-.play-button {
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 0 rgb(255 255 255 / 15%);
+    }
+
+    40% {
+        box-shadow: 0 0 0 100px rgb(255 255 255 / 0%);
+    }
+
+    80% {
+        box-shadow: 0 0 0 100px rgb(255 255 255 / 0%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 rgb(255 255 255 / 0%);
+    }
+}
+
+.play {
     background: url(../../image/play4.png);
     border-radius: 50%;
-    /* animation: animate 5s linear infinite; */
+    animation: animate 5s linear infinite;
+    cursor: pointer;
+    opacity: var(--item-opacity);
+}
+
+.pause {
+    background: url(../../image/pause4.png);
+    border-radius: 50%;
+    animation: animate 5s linear 1;
     cursor: pointer;
     opacity: var(--item-opacity);
 }
 
 .audio-play-container:hover>input[type="range"],
-.audio-play-container:hover>.play-button {
+.audio-play-container:hover>.play,
+.audio-play-container:hover>.pause {
     opacity: var(--hover-item-opacity);
 }
 
